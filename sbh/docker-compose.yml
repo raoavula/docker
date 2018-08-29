@@ -1,0 +1,15 @@
+version: '2'
+services:
+    ubuntu:
+         build: ubuntu
+    app: 
+         build: app
+
+    proxy:
+         build: proxy
+         ports:
+         - "80:80"   
+    redis:
+         build: redis
+    node:
+         build: node
